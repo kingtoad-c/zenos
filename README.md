@@ -5,5 +5,14 @@ hey this is the first firmware i have made for the pi berry it includes games,wi
 # how to install
 
 ~~~
-
+git clone https://github.com/kingtoad-c/zenos.git
+~~~
+~~~
+cd zenos
+~~~
+~~~
+chmod + *
+~~~
+~~~
+./install.sh
 ~~~
