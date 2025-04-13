@@ -1,0 +1,4 @@
+git clone <repo link>
+cd <repo name>
+chmod + *
+./install.sh
