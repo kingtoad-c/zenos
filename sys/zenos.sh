@@ -3,6 +3,12 @@
 curl -L https://aka.ms/install-dotnet-preview -o install-dotnet-preview.sh
 sudo bash install-dotnet-preview.sh
 
+cd ..
+mkdir user
+cd user
+mkdir root
+cd root
+
 clear
 
 # Colors
@@ -22,10 +28,6 @@ ${CYAN}███████╗███████╗████████�
 ███████╗███████╗    ██║   ███████╗██║  ██║███████╗
 ╚══════╝╚══════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝╚══════╝${RESET}
 "
-
-cd ..
-cd user
-cd root
 
 # Matrix-style loading animation
 matrix_loading() {
