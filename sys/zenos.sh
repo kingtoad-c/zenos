@@ -32,8 +32,8 @@ matrix_effect() {
     local columns=$(tput cols)
     local lines=$(tput lines)
     local chars=(a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9)
-
-    tput civis  # Hide cursor
+    
+    tput civis  # hide cursor
     for ((i=0; i<50; i++)); do
         for ((j=0; j<columns; j++)); do
             char=${chars[$RANDOM % ${#chars[@]}]}
@@ -41,7 +41,7 @@ matrix_effect() {
         done
         sleep 0.05
     done
-    tput cnorm  # Show cursor
+    tput cnorm  # show cursor
     clear
 }
 
@@ -50,9 +50,10 @@ clear
 echo -e "${ZEN_LOGO}"
 echo -e "${CYAN}Booting ZenOS...${RESET}"
 
-# Delay and matrix effect
+# Wait a bit and show Matrix effect
 sleep 2
 matrix_effect
+
 
 # Welcome screen
 echo -e "${MAGENTA}Welcome to ZenOS!${RESET}"
